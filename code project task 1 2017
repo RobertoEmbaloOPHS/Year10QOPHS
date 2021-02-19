@@ -1,0 +1,38 @@
+while register == False:
+    title= print("League registration")
+    firstname = input("Enter your first name: ")
+    lastname = input("Enter your surname: ")
+    nickname= input("Enter your nickname: ")
+    email= input("Enter your email: ")
+
+    skills = False
+    while skills == False:
+        skill= input("What is your skill level:"
+             "Put E if you are an expert and put C if you are a casual player: ")
+        if skill == "E":
+            print("Expert level")
+            skills = True
+        elif skill == "C":
+            print("Casual level")
+            skills= True
+        else:
+            print("Incorrect")
+            
+    print(title)
+    print(firstname)
+    print(lastname)
+    print(nickname)
+    print(email)
+    print(skill)
+    details = False
+    while details == False:
+        detail = input("Are the details correct. Y/N: ")
+        if detail == "Y":
+            register = True
+            details =True
+        elif detail == "N":
+            print("Incorrect")
+            details= True
+        else:
+            print("You are blind")
+print("Registered")
