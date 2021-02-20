@@ -1,0 +1,40 @@
+print("Welcome")
+state = False
+while state == False:
+    email = input("Enter your email here: ")
+    state1 = False
+    while state1 == False:
+        skill = input("What is your skill level (E -Expert/C -Casual): ")
+        if skill == "e" or skill == "E" or skill == "c" or skill == "C":
+            state1= True
+        else:
+            print("Skill level not identified.")
+    state2= False
+    while state2 == False:
+        country = input("Which country do you come from(UK/US/AU): ")
+        if country=="uk" or country=="UK" or country=="us" or country=="US" or country=="au" or country=="AU":
+            state2 = True
+        else:
+            print("Country not identified.")
+    countries = country.upper()
+    skills = skill.upper()
+    if skills == "E" and countries == "UK":
+        print("The UK fee is 45 GBP")
+    elif skills == "C" and countries == "UK":
+        print("The UK fee is 30 GBP")
+    elif skills == "E" and countries == "US":
+        print("The US fee is 52.50 USD")
+    elif skills == "C" and countries == "US":
+        print("The US fee is 45 USD")
+    elif skills == "E" and countries == "AU":
+        print("The AU fee is 70 AUD")
+    else:
+        print("The AU fee is 60 AUD")
+    state3 = False
+    while state3 == False:
+        another = input("Calculate another fee? Y/N: ")
+        if another == "Y" or another == "y":
+            state3 = True
+        elif another == "N" or another == "n":
+            state3 = True
+            state = True
