@@ -1,0 +1,20 @@
+num1 = int(input("Enter a number: "))
+total = num1
+option = "y"
+while option == "y":
+    num2 = int(input("Enter a second number: "))
+    total = total + num2
+    state = False
+    while state == False:
+        more = input("Do you want to add another number(y/n): ")
+        loads= more.lower()
+        if loads == "y":
+            state = True
+        elif loads == "n":
+            state = True
+            option = "n"
+        else:
+            print("Answer not recognised")
+
+print("The total is",total)
+        
