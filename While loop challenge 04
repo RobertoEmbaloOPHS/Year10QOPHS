@@ -1,0 +1,19 @@
+status = False
+count = 0
+while status == False:
+    name = str(input("Who do you want to invite?: "))
+    print(name,"has been invited")
+    count = count + 1
+    state = False
+    while state == False:
+        option = input("Do you want to invite someone else?: ")
+        options = option.lower()
+        if options == "y":
+            state = True
+        elif options == "n":
+            state = True
+            status = True
+        else:
+            print("Answer not recognised")
+
+print("You have invited",count,"people")
