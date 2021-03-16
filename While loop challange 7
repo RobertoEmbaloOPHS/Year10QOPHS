@@ -1,0 +1,14 @@
+count = 10
+while count != 0:
+    print("There are ",count,"green bottles hanging on the wall,"
+           ,count," green bottles hanging on the wall,"
+          "And if one green bottle should accidentally fall")
+    state = False
+    count = count - 1
+    while state == False:
+        number = int(input("How many green bottles will be hanging on the wall?: "))
+        if number == count:
+            print("There will be",count,"green bottles hanging on the walls")
+            state = True
+        else:
+            print("No, try again")
