@@ -1,0 +1,12 @@
+state = False
+while state == False:
+    number = int(input("Enter a number between 10 and 20: "))
+    if number < 10:
+        print("Too low")
+        print("Try again")
+    elif number > 20:
+        print("Too high")
+        print("Try again")
+    else:
+        print("Thank you")
+        state = True
