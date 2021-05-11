@@ -1,0 +1,19 @@
+names = []
+names.append(input("Enter the name of the invited person: "))
+names.append(input("Enter the name of the invited person: "))
+names.append(input("Enter the name of the invited person: "))
+
+state = True
+
+while state == True:
+    option = input("Do you want to invite another person?(y/n): ")
+    options = option.lower()
+    if options == "yes" or options == "y":
+        names.append(input("Enter the name of the invited person: "))
+    elif options == "no" or options == "n":
+        state = False
+    else:
+        print("You are an absolute buffon")
+
+invited = len(names)
+print("You have invited",invited,"people")
