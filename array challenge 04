@@ -1,0 +1,19 @@
+TVpro = ["kakegurui","haikyuu","deathnote","jujutsu kaisen"]
+
+print(TVpro[0])
+print(TVpro[1])
+print(TVpro[2])
+print(TVpro[3])
+
+another = input("do you want another show inputted? y or n >>> ")
+
+while another == "y":
+    newshow = input("name another show, press n to exit >>> ")
+
+    if newshow != "n":
+        TVpro.append(newshow)
+
+    elif newshow == "n":
+        another = "n"
+
+print(TVpro)
