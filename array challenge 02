@@ -1,0 +1,11 @@
+cars = []
+state = True
+while state == True:
+    brand = input("Input a car brand or press x to exit: ")
+    if brand == "x":
+        print("Exiting...")
+        state = False
+    else:
+        cars.append(brand)
+
+print("The brands are",cars)
