@@ -1,0 +1,29 @@
+food = []
+
+food.append(input("Enter a food : "))
+food.append(input("Enter a food : "))
+food.append(input("Enter a food : "))
+food.append(input("Enter a food : "))
+
+print(food)
+
+delete = int(input("what food do you want to delete? 1, 2, 3 or 4: "))
+
+if delete == 3:
+    del food[2]
+    print(food)
+
+elif delete == 2:
+    del food[1]
+    print(food)
+
+elif delete == 1:
+    del food[0]
+    print(food)
+
+elif delete == 4:
+    del food[3]
+    print(food)
+
+else:
+    print("You are an absolute buffon")
