@@ -1,15 +1,15 @@
 nums = []
 
-nums.append(input("give me a number >>>> "))
+nums.append(input("give me a number: "))
 print(nums)
 
-nums.append(input("give me a number >>>> "))
+nums.append(input("give me a number: "))
 print(nums)
 
-nums.append(input("give me a number >>>> "))
+nums.append(input("give me a number: "))
 print(nums)
 
-delete = input("do you still want the last number you input? y or n >>> ")
+delete = input("do you still want the last number you input? y or n: ")
 
 if delete == "n":
     del nums[2]
