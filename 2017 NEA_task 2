@@ -37,3 +37,5 @@ while state == False:
         elif another == "N" or another == "n":
             state3 = True
             state = True
+       
+print("Bye!!")
