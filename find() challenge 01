@@ -1,0 +1,3 @@
+name = "Roberto"
+thing = name.find("e")
+print(thing)
