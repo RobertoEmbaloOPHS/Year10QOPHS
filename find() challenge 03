@@ -1,0 +1,3 @@
+email = "TheQueen@BuckinghamPalace.uk"
+location = email.find("@")
+print("The index location of @ is",location)
