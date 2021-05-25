@@ -1,0 +1,4 @@
+numbers = "123456789"
+location3 = numbers.find("3")
+location8 = numbers.find("8")
+print("The index location of 3 is",location3,"and the index of 8 is",location8)
