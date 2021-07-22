@@ -1,0 +1,16 @@
+print("Hello!!")
+state = True
+
+while state == True:
+    option = input("Enter A to search for a fixture, B for outstanding fixtures,"
+               "C to display the leaderboard and Q to quit: ")
+    options = option.lower()
+    if options == "q":
+        print("Bye!!")
+        state = False
+    elif options == "a":
+        fixture=int(input("What fixture number do you want?: "))
+        num = open("firesidefixtures.txt","r")
+        nums = num.read()
+        nums_list = [nums]
+        print(nums_list)
